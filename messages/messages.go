@@ -3,7 +3,7 @@ package messages
 import (
 	"sync"
 
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 // Messages contains the relevant messages for each view (height, round)

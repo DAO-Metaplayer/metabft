@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 func proposalMatches(proposal *proto.Proposal, message *proto.Message) bool {

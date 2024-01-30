@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 var (

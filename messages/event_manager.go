@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 type eventManager struct {

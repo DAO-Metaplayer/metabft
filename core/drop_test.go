@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 
 	"github.com/stretchr/testify/assert"
 )

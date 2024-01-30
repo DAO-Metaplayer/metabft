@@ -1,7 +1,7 @@
 package messages
 
 import (
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 type eventSubscription struct {

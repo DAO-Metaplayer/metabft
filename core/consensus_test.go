@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 // generateNodeAddresses generates dummy node addresses

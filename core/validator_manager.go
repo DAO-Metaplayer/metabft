@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 var (

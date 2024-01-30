@@ -82,7 +82,7 @@ linters-settings:
     numbers: true
 
   goimports:
-    local-prefixes: github.com/vishnushankarsg/metabft
+    local-prefixes: github.com/DAO-Metaplayer/metabft
                     github.com/armon/go-metrics
     
 

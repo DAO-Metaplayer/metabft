@@ -1,4 +1,4 @@
-module github.com/vishnushankarsg/metabft
+module github.com/DAO-Metaplayer/metabft
 
 go 1.19
 

@@ -3,8 +3,8 @@
 package core
 
 import (
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 // MessageConstructor defines a message constructor interface

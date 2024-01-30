@@ -1,6 +1,6 @@
 package core
 
-import "github.com/vishnushankarsg/metabft/messages/proto"
+import "github.com/DAO-Metaplayer/metabft/messages/proto"
 
 // Transport defines an interface
 // the node uses to communicate with other peers

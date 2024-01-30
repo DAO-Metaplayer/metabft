@@ -3,8 +3,8 @@ package core
 import (
 	"sync"
 
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 type stateType uint8

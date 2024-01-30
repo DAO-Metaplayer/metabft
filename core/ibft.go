@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 	"github.com/armon/go-metrics"
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
 )
 
 // Logger represents the logger behaviour

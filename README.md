@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/vishnushankarsg/metabft/branch/main/graph/badge.svg?token=0vLkmaEq3h)](https://codecov.io/gh/vishnushankarsg/metabft)
+[![codecov](https://codecov.io/gh/DAO-Metaplayer/metabft/branch/main/graph/badge.svg?token=0vLkmaEq3h)](https://codecov.io/gh/DAO-Metaplayer/metabft)
 # metabft README
 
 ## Overview
@@ -16,7 +16,7 @@ As mentioned before, `metabft` implements basic METABFT 2.0 state machine logic,
 
 To get up and running with the `metabft` package, you can pull it into your project using:
 
-`go get github.com/vishnushankarsg/metabft`
+`go get github.com/DAO-Metaplayer/metabft`
 
 Currently, the minimum required go version is `go 1.17`.
 
@@ -25,7 +25,7 @@ Currently, the minimum required go version is `go 1.17`.
 ```go
 package main
 
-import "github.com/vishnushankarsg/metabft"
+import "github.com/DAO-Metaplayer/metabft"
 
 // METABFTBackend is the structure that implements all required
 // metabft Backend interfaces

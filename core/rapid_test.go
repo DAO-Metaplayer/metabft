@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"pgregory.net/rapid"
 
-	"github.com/vishnushankarsg/metabft/messages"
-	"github.com/vishnushankarsg/metabft/messages/proto"
+	"github.com/DAO-Metaplayer/metabft/messages"
+	"github.com/DAO-Metaplayer/metabft/messages/proto"
 )
 
 // roundMessage contains message data within consensus round
