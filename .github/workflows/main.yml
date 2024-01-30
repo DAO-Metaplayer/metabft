@@ -1,0 +1,70 @@
+---
+name: Main CI
+on:  # yamllint disable-line rule:truthy
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    name: Test METABFT
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.19.x
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Go test
+        run: go test -test.short -covermode=atomic -shuffle=on -coverprofile coverage.out -timeout 15m ./...
+
+      - name: Upload coverage file to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: coverage.out
+
+  go_test_race:
+    name: Test METABFT with Race
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.19.x
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Run Go Test with race
+        run: go test -test.short -race -shuffle=on -timeout 15m ./...
+
+  reproducible-builds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.19.x
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Reproducible build test
+        run: |
+          make builds-dummy
+          shasum -a256 ./build/metabft1 | cut -d " " -f 1  > metabft1.sha256
+          shasum -a256 ./build/metabft2 | cut -d " " -f 1  > metabft2.sha256
+          if ! cmp metabft1.sha256 metabft2.sha256; then
+            echo >&2 "Reproducible build broken"; cat metabft1.sha256; cat metabft2.sha256; exit 1
+          fi
